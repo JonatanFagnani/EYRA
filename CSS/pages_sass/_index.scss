@@ -1,0 +1,125 @@
+/*HERO SECTION START*/
+
+.hero {
+  width: 100%;
+  height: 100%;
+  grid-area: hero;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+  &__img {
+    height: auto;
+    width: 700px;
+    margin-left: -30px;
+    @include mobile {
+      height: auto;
+      width: 500px;
+    }
+  }
+}
+
+.hero__content {
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 2rem;
+  }
+  &__info {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 4rem;
+    margin: 2rem;
+  }
+  &__button {
+    width: 200px;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-image: linear-gradient(
+      20deg,
+      rgb(89, 63, 169),
+      rgb(124, 95, 219)
+    );
+    transition: width 0.5s;
+    &__link {
+      color: white;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+  &__button:hover {
+    width: 250px;
+  }
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*HERO SECTION END*/
+
+/* ARTICLE START*/
+
+article {
+  grid-area: article;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+article div h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+
+article div ol {
+  padding: 0rem 0rem 0rem 10rem;
+}
+
+article div ol li {
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.5rem;
+}
+
+article img {
+  height: auto;
+  width: 700px;
+  @include mobile {
+    height: auto;
+    width: 500px;
+  }
+}
+
+/* ARTICLE END*/

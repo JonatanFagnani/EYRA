@@ -1,0 +1,12 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/header";
+@import "./partials/footer";
+//PAGES
+@import "./pages_sass/index";
+@import "./pages_sass/servicios";
+@import "./pages_sass/trabajos";
+@import "./pages_sass/galeria";
+@import "./pages_sass/contacto";
+//MEDIA QUERIES
+@import "./partials/media_queries";

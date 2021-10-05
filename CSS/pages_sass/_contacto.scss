@@ -1,0 +1,105 @@
+/*CONTACTO START*/
+
+.contacto {
+  height: 100%;
+  grid-area: hero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div img {
+    height: auto;
+    width: 600px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: 13rem;
+    animation: fadeIn 2s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contacto p {
+  text-align: center;
+  font-size: $font-size-content;
+  font-weight: 300;
+  padding: 5rem 10rem 5rem 10rem;
+}
+
+.formulario {
+  background-image: linear-gradient(
+    20deg,
+    rgba(89, 63, 169, 0),
+    rgba(124, 95, 219, 0.7)
+  );
+}
+
+.formulario div,
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.formulario,
+div,
+p,
+input,
+label {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.formulario input,
+select {
+  background-color: rgb(211, 209, 231);
+  border: none;
+  margin: 0.5rem;
+}
+
+.formulario select {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.formulario div button {
+  width: 200px;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  border: none;
+  background-image: linear-gradient(20deg, rgb(89, 63, 169), rgb(124, 95, 219));
+  transition: width 0.5s;
+}
+
+.formulario div button:hover {
+  width: 250px;
+}
+
+.formulario div button a {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}

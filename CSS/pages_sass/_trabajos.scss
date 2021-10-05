@@ -1,0 +1,85 @@
+/*TRABAJOS*/
+
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.trabajos {
+  grid-area: hero;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    @include mobile {
+      margin-top: 5rem;
+    }
+  }
+  &__img {
+    @include sizes(auto, 600px);
+  }
+}
+
+.trabajos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    width: 80%;
+    text-align: center;
+    font-size: $font-size-content;
+    font-weight: 300;
+    margin: 5rem;
+  }
+}
+
+.banner {
+  width: ($ancho-banner)-10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    height: auto;
+    width: 300px;
+  }
+}
+
+.trabajos {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

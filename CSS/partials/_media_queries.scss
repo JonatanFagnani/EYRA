@@ -1,0 +1,99 @@
+/*MEDIA QUERIES START*/
+
+/*QUERIES FOR PHONES 375px to 700px*/
+
+@mixin mobile {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+/*
+  header div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header div p {
+    font-size: 1.6rem;
+    padding: 0px;
+  }
+
+  header nav ul {
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero div h1 {
+    margin-top: 20rem;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero div button {
+    display: none;
+  }
+
+  article {
+    margin-top: 5rem;
+  }
+
+  article img {
+    display: none;
+  }
+
+  article div h2 {
+    margin-top: 5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+
+  .redes img {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+/*QUERIES FOR TABLETS*/
+
+/*
+@media screen and (max-width: 1000px) {
+  header div p {
+    font-size: 1.7rem;
+  }
+
+  .hero img {
+    height: auto;
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  article img {
+    height: auto;
+    width: 500px;
+  }
+
+  .redes img {
+    padding: 0px 15px;
+  }
+}
+*/

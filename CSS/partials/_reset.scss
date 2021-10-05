@@ -1,0 +1,25 @@
+/*Reset CSS & HTML*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: $text-color;
+  background-color: rgb(211, 209, 231);
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8rem 1fr 1fr 8rem;
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "article article"
+    "footer footer";
+}
