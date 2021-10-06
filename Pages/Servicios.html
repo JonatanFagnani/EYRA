@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aquí encontrarás todos los servicios que EYRA tiene para vos, el futuro de tu negocio se encuentra acá.">
-    <meta name="keywords"  content="COMUNICACIÓN, COMMUNITY, MANAGER, DIGITAL, REDES, FOTOPRODUCTO">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="description"
+      content="Aquí encontrarás todos los servicios que EYRA tiene para vos, el futuro de tu negocio se encuentra acá."
+    />
+    <meta
+      name="keywords"
+      content="COMUNICACIÓN, COMMUNITY, MANAGER, DIGITAL, REDES, FOTOPRODUCTO"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap");
     </style>
@@ -14,22 +26,49 @@
     <title>EYRA | Nuestros Servicios</title>
   </head>
   <body>
-    <header>
-      <div>
-        <a href="../index.html">
-          <img src="../Media/eyra-cara.png" alt="Logo" />
-        <p>EYRA - Contenidos Digitales</p>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container-fluid">
+        <a title="EYRA" href="../index.html"
+          ><img src="../Media/eyra-cara.png" class="logo" alt="logo"
+        /></a>
+        <p class="logo-text">EYRA Contenidos Digitales</p>
+        <button
+          class="navbar-toggler border-0 m-3 p-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav lista">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Trabajos.html">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./Servicios.html">Servicios</a></li>
-          <li><a href="./Trabajos.html">Trabajos</a></li>
-          <li><a href="./Galeria.html">Galeria</a></li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    </nav>
     <section class="servicios">
       <div>
         <h1 class="servicios__title">NUESTROS SERVICIOS</h1>
@@ -41,22 +80,34 @@
         </p>
       </div>
       <div>
-        <img src="../Media/Servicios.png" class="servicios__img" alt="encuesta" />
+        <img
+          src="../Media/Servicios.png"
+          class="servicios__img"
+          alt="encuesta"
+        />
       </div>
     </section>
     <article class="box">
       <h2 class="box__title">Algunas de nuestras propuestas para tu negocio</h2>
       <div class="box__cards">
         <div class="box__cards__card">
-          <img src="../Media/diseño-grafico.png" class="box__cards__card__img" alt="computadora prendida" />
-          <h3 class="box__cards__card__title" >Diseño Gráfico</h3>
+          <img
+            src="../Media/diseño-grafico.png"
+            class="box__cards__card__img"
+            alt="computadora prendida"
+          />
+          <h3 class="box__cards__card__title">Diseño Gráfico</h3>
           <p class="box__cards__card__info">
             Diseño de logos, diseño editorial y merchandising. Fotografía: books
             profesionales, fotografía de productos, registro de eventos.
           </p>
         </div>
         <div class="box__cards__card">
-          <img src="../Media/mkt-digital.png" class="box__cards__card__img" alt="globo terraqueo" />
+          <img
+            src="../Media/mkt-digital.png"
+            class="box__cards__card__img"
+            alt="globo terraqueo"
+          />
           <h3 class="box__cards__card__title">Marketing Digital</h3>
           <p class="box__cards__card__info">
             Servicios y planificación de estrategias online para el
@@ -64,7 +115,11 @@
           </p>
         </div>
         <div class="box__cards__card">
-          <img src="../Media/comunicacion-digital.png" class="box__cards__card__img" alt="antena" />
+          <img
+            src="../Media/comunicacion-digital.png"
+            class="box__cards__card__img"
+            alt="antena"
+          />
           <h3 class="box__cards__card__title">Comunicación digital</h3>
           <p class="box__cards__card__info">
             Desarrollo de estrategias de comunicación y manejo de redes
@@ -85,5 +140,10 @@
         <a href="#"> <img src="../Media/facebook.png" alt="Facebook" /> </a>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
