@@ -26,9 +26,6 @@
     font-size: 5rem;
     font-weight: 800;
     margin-top: 1rem;
-    @include mobile {
-      margin-top: 5rem;
-    }
   }
   &__img {
     @include sizes(auto, 600px);

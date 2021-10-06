@@ -27,6 +27,9 @@
     font-weight: 800;
     margin-top: 13rem;
     animation: fadeIn 2s;
+    @include mobile {
+      margin-top: 20rem;
+    }
   }
 }
 

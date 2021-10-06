@@ -13,7 +13,6 @@ body {
   font-family: "Mulish", sans-serif;
   color: $text-color;
   background-color: rgb(211, 209, 231);
-  height: 150vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 8rem 1fr 1fr 8rem;
@@ -22,4 +21,8 @@ body {
     "hero hero"
     "article article"
     "footer footer";
+}
+
+a {
+  text-decoration: none;
 }

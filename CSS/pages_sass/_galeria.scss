@@ -22,6 +22,9 @@
 .galeria div img {
   height: auto;
   width: 500px;
+  @include mobile {
+    margin-top: 20rem;
+  }
 }
 
 .galeria h1 {
