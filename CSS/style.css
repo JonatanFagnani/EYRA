@@ -622,7 +622,7 @@ article img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vh;
+    width: 100vw;
   }
 }
 
@@ -653,6 +653,13 @@ article img {
   width: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .trabajos__img {
+    height: 300px;
+    width: auto;
+  }
+}
+
 .trabajos-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,7 +677,7 @@ article img {
 }
 
 .trabajos-info__text {
-  width: 80%;
+  width: 80vw;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
@@ -702,7 +709,7 @@ article img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vh;
+    width: 100vw;
   }
 }
 
@@ -770,7 +777,7 @@ article img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vh;
+    width: 100vw;
   }
 }
 
@@ -796,6 +803,8 @@ article img {
 
 @media screen and (max-width: 500px) {
   .galeria div img {
+    height: auto;
+    width: 300px;
     margin-top: 20rem;
   }
 }
@@ -863,7 +872,7 @@ article img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vh;
+    width: 100vw;
   }
 }
 
@@ -887,6 +896,13 @@ article img {
   width: 600px;
 }
 
+@media screen and (max-width: 500px) {
+  .contacto div img {
+    height: auto;
+    width: 300px;
+  }
+}
+
 .contacto h1 {
   text-align: center;
   font-size: 5rem;
@@ -899,6 +915,7 @@ article img {
 @media screen and (max-width: 500px) {
   .contacto h1 {
     margin-top: 20rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -916,6 +933,12 @@ article img {
   font-size: 2.3rem;
   font-weight: 300;
   padding: 5rem 10rem 5rem 10rem;
+}
+
+@media screen and (max-width: 500px) {
+  .contacto p {
+    padding: 0px;
+  }
 }
 
 .formulario {
