@@ -41,6 +41,9 @@
   font-size: 2.3rem;
   font-weight: 300;
   padding: 5rem 10rem 5rem 10rem;
+  @include mobile {
+    padding: 0px;
+  }
 }
 
 .carousel-galeria {
@@ -50,6 +53,10 @@
 .galeria,
 .galeria-fotos {
   animation: fadeIn 2s;
+}
+
+.galeria-height {
+  height: 100vh;
 }
 
 @keyframes fadeIn {

@@ -823,6 +823,12 @@ article img {
   padding: 5rem 10rem 5rem 10rem;
 }
 
+@media screen and (max-width: 500px) {
+  .galeria p {
+    padding: 0px;
+  }
+}
+
 .carousel-galeria {
   height: 100%;
 }
@@ -831,6 +837,10 @@ article img {
 .galeria-fotos {
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
+}
+
+.galeria-height {
+  height: 100vh;
 }
 
 @keyframes fadeIn {
