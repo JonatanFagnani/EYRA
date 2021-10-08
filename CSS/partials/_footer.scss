@@ -2,7 +2,7 @@
 
 footer {
   height: 8rem;
-  width: 100%;
+  width: 100vw;
   grid-area: footer;
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,9 @@ footer img {
   height: 35px;
   padding-right: 30px;
   @include mobile {
-    padding-right: 30px;
+    width: auto;
+    height: 30px;
+    padding-right: 10px;
   }
 }
 
