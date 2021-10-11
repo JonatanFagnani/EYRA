@@ -2,7 +2,6 @@
 
 .galeria {
   height: 100%;
-  grid-area: hero;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -34,6 +33,10 @@
   font-size: 5rem;
   font-weight: 800;
   margin-top: 13rem;
+  @include mobile {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 .galeria p {
@@ -43,6 +46,7 @@
   padding: 5rem 10rem 5rem 10rem;
   @include mobile {
     padding: 0px;
+    font-size: 1.6rem;
   }
 }
 

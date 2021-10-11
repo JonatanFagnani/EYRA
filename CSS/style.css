@@ -14,13 +14,6 @@ body {
   font-family: "Mulish", sans-serif;
   color: #1a1558;
   background-color: #d3d1e7;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 8rem 1fr 1fr 8rem;
-      grid-template-rows: 8rem 1fr 1fr 8rem;
-      grid-template-areas: "header header" "hero hero" "article article" "footer footer";
 }
 
 a {
@@ -29,25 +22,21 @@ a {
 
 /*MEDIA QUERIES START*/
 nav {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: header;
-  width: 100vw;
   background-image: linear-gradient(20deg, rgba(89, 63, 169, 0.1), rgba(124, 95, 219, 0.5));
   border-bottom-left-radius: 1rem;
   height: 7rem;
 }
 
-@media screen and (max-width: 500px) {
-  nav {
-    height: 10rem;
-  }
-}
-
 .logo {
   width: auto;
   height: 9rem;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    height: auto;
+    width: 5rem;
+  }
 }
 
 .logo-text {
@@ -100,9 +89,6 @@ nav ul li {
 footer {
   height: 8rem;
   width: 100vw;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,18 +160,12 @@ footer img {
 /*FOOTER END*/
 /*HERO SECTION START*/
 .hero {
-  width: 100vw;
-  height: 100%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -203,14 +183,13 @@ footer img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
+    width: 100%;
   }
 }
 
 .hero__img {
   height: auto;
-  width: 700px;
-  margin-left: -30px;
+  width: 500px;
 }
 
 @media screen and (max-width: 500px) {
@@ -225,7 +204,7 @@ footer img {
 .hero__content__title {
   text-align: center;
   font-size: 5rem;
-  font-weight: 900;
+  font-weight: 800;
   margin-top: 2rem;
 }
 
@@ -236,11 +215,18 @@ footer img {
 }
 
 .hero__content__info {
+  max-width: 100rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
   line-height: 4rem;
   margin: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero__content__info {
+    font-size: 1.6rem;
+  }
 }
 
 .hero__content__button {
@@ -306,10 +292,6 @@ footer img {
 /*HERO SECTION END*/
 /* ARTICLE START*/
 article {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: article;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,13 +344,14 @@ article div ol li {
 
 @media screen and (max-width: 500px) {
   article div ol li {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
 }
 
 article img {
   height: auto;
-  width: 700px;
+  width: 500px;
 }
 
 @media screen and (max-width: 500px) {
@@ -382,10 +365,6 @@ article img {
 /*PAGES: SERVICIOS START*/
 .servicios {
   height: 45rem;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,8 +385,6 @@ article img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
-    height: 100%;
   }
 }
 
@@ -434,16 +411,19 @@ article img {
 @media screen and (max-width: 768px) {
   .servicios__title {
     margin-top: 10rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .servicios__title {
     margin-top: 13rem;
+    font-size: 2rem;
   }
 }
 
 .servicios__info {
+  max-width: 100rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
@@ -452,7 +432,7 @@ article img {
 
 @media screen and (max-width: 500px) {
   .servicios__info {
-    width: 100vw;
+    font-size: 1.6rem;
     padding: 10px 10px;
   }
 }
@@ -490,6 +470,7 @@ article img {
 @media screen and (max-width: 500px) {
   .box__title {
     text-align: center;
+    font-size: 2rem;
   }
 }
 
@@ -553,13 +534,12 @@ article img {
 
 @media screen and (max-width: 500px) {
   .box__cards__card {
-    width: 100vw;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .box__cards__card {
-    width: 50rem;
     margin: 2rem 0rem 0rem 0rem;
   }
 }
@@ -574,8 +554,20 @@ article img {
   margin: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .box__cards__card__title {
+    font-size: 2rem;
+  }
+}
+
 .box__cards__card__info {
   margin: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .box__cards__card__info {
+    font-size: 1.6rem;
+  }
 }
 
 .servicios,
@@ -595,10 +587,6 @@ article img {
 
 /*TRABAJOS*/
 .trabajos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,8 +636,14 @@ article img {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .trabajos__title {
+    font-size: 2rem;
+  }
+}
+
 .trabajos__img {
-  height: 600px;
+  height: 500px;
   width: auto;
 }
 
@@ -682,6 +676,12 @@ article img {
   font-size: 2.3rem;
   font-weight: 300;
   margin: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .trabajos-info__text {
+    font-size: 1.6rem;
+  }
 }
 
 .banner {
@@ -750,10 +750,6 @@ article img {
 /*GALERIA START*/
 .galeria {
   height: 100%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,6 +812,13 @@ article img {
   margin-top: 13rem;
 }
 
+@media screen and (max-width: 500px) {
+  .galeria h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+
 .galeria p {
   text-align: center;
   font-size: 2.3rem;
@@ -826,6 +829,7 @@ article img {
 @media screen and (max-width: 500px) {
   .galeria p {
     padding: 0px;
+    font-size: 1.6rem;
   }
 }
 
@@ -855,10 +859,6 @@ article img {
 /*CONTACTO START*/
 .contacto {
   height: 100%;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,7 +925,7 @@ article img {
 @media screen and (max-width: 500px) {
   .contacto h1 {
     margin-top: 20rem;
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -947,7 +947,8 @@ article img {
 
 @media screen and (max-width: 500px) {
   .contacto p {
-    padding: 0px;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
 }
 
