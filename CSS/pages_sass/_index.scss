@@ -60,6 +60,9 @@
       font-size: 2rem;
       padding: 1rem;
     }
+    &__link:hover {
+      color: white;
+    }
   }
   &__button:hover {
     width: 250px;

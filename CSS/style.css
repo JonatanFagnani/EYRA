@@ -246,6 +246,10 @@ footer img {
   padding: 1rem;
 }
 
+.hero__content__button__link:hover {
+  color: white;
+}
+
 .hero__content__button:hover {
   width: 250px;
 }
