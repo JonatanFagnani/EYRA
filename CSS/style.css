@@ -139,8 +139,15 @@ footer div p {
 
 footer img {
   width: auto;
-  height: 70px;
+  height: 90px;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  footer img {
+    height: auto;
+    width: 75px;
+  }
 }
 
 .redes img {
@@ -154,6 +161,7 @@ footer img {
     width: auto;
     height: 30px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -675,7 +683,7 @@ article img {
 }
 
 .trabajos-info__text {
-  width: 80vw;
+  max-width: 100rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
@@ -689,7 +697,7 @@ article img {
 }
 
 .banner {
-  width: 90%;
+  max-width: 100rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,9 +765,9 @@ article img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -824,6 +832,7 @@ article img {
 }
 
 .galeria p {
+  max-width: 100rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
@@ -943,6 +952,7 @@ article img {
 }
 
 .contacto p {
+  max-width: 100rem;
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
