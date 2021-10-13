@@ -7,7 +7,7 @@
 
 .trabajos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   @include mobile {
     flex-direction: column;
