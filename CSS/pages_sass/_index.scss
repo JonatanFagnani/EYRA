@@ -12,11 +12,10 @@
   }
   &__img {
     height: auto;
-    width: 500px;
+    width: 100%;
     @include mobile {
       height: auto;
       width: 300px;
-      margin-top: 15rem;
       margin-left: 0px;
     }
   }
@@ -132,7 +131,7 @@ article div ol li {
 
 article img {
   height: auto;
-  width: 500px;
+  width: 100%;
   @include mobile {
     height: auto;
     width: 300px;

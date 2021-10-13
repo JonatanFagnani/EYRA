@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
   @include tablet {
     flex-direction: column;
@@ -18,20 +18,15 @@
   }
   div img {
     height: auto;
-    width: 600px;
-    @include mobile {
-      height: auto;
-      width: 300px;
-    }
+    width: 100%;
   }
   h1 {
     text-align: center;
     font-size: 5rem;
     font-weight: 800;
-    margin-top: 13rem;
+    margin-top: 2rem;
     animation: fadeIn 2s;
     @include mobile {
-      margin-top: 20rem;
       font-size: 2rem;
     }
   }

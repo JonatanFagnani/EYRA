@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
   @include tablet {
     flex-direction: column;
@@ -20,19 +20,13 @@
 
 .galeria div img {
   height: auto;
-  width: 500px;
-  @include mobile {
-    height: auto;
-    width: 300px;
-    margin-top: 20rem;
-  }
+  width: 100%;
 }
 
 .galeria h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: 800;
-  margin-top: 13rem;
   @include mobile {
     font-size: 2rem;
     margin-top: 1rem;

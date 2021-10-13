@@ -21,7 +21,9 @@ nav {
 .logo-text {
   font-weight: 700;
   @include mobile {
-    display: none;
+    font-size: 1.2rem;
+    padding-right: 0px;
+    margin: 0px;
   }
 }
 
