@@ -53,6 +53,12 @@ footer img {
     padding-right: 10px;
     padding-left: 10px;
   }
+  @include tablet {
+    width: auto;
+    height: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 /*FOOTER END*/
