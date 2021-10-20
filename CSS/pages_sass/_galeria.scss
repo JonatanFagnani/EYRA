@@ -46,11 +46,14 @@
   }
 }
 
+/*Animacion fade in de la page*/
+
 .galeria,
 .galeria-fotos {
   animation: fadeIn 2s;
 }
 
+/*Oculta carousel bs en mobile*/
 .carousel-galeria {
   @include mobile {
     display: none;
