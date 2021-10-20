@@ -47,15 +47,9 @@ footer img {
   width: auto;
   height: 35px;
   padding-right: 30px;
-  @include mobile {
-    width: auto;
-    height: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
   @include tablet {
     width: auto;
-    height: 35px;
+    height: 30px;
     padding-right: 10px;
     padding-left: 10px;
   }
