@@ -27,6 +27,7 @@
   text-align: center;
   font-size: 5rem;
   font-weight: 800;
+  margin-top: 2rem;
   @include mobile {
     font-size: 2rem;
     margin-top: 1rem;
@@ -45,17 +46,15 @@
   }
 }
 
-.carousel-galeria {
-  height: 100%;
-}
-
 .galeria,
 .galeria-fotos {
   animation: fadeIn 2s;
 }
 
-.galeria-height {
-  height: 100vh;
+.carousel-galeria {
+  @include mobile {
+    display: none;
+  }
 }
 
 @keyframes fadeIn {

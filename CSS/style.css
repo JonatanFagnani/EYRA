@@ -349,6 +349,7 @@ article div h2 {
 @media screen and (max-width: 500px) {
   article div h2 {
     font-size: 2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -437,7 +438,7 @@ article img {
 
 @media screen and (max-width: 768px) {
   .servicios__title {
-    font-size: 2rem;
+    font-size: 5rem;
   }
 }
 
@@ -496,6 +497,7 @@ article img {
   .box__title {
     text-align: center;
     font-size: 2rem;
+    margin: 2rem 2rem;
   }
 }
 
@@ -746,8 +748,8 @@ article img {
 }
 
 .banner__img {
-  height: auto;
-  width: 50%;
+  height: 500px;
+  width: auto;
 }
 
 .trabajos {
@@ -818,6 +820,7 @@ article img {
   text-align: center;
   font-size: 5rem;
   font-weight: 800;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -842,18 +845,16 @@ article img {
   }
 }
 
-.carousel-galeria {
-  height: 100%;
-}
-
 .galeria,
 .galeria-fotos {
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
 }
 
-.galeria-height {
-  height: 100vh;
+@media screen and (max-width: 500px) {
+  .carousel-galeria {
+    display: none;
+  }
 }
 
 @keyframes fadeIn {
