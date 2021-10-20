@@ -157,6 +157,7 @@ footer img {
   }
 }
 
+/*Seccion redes solciales*/
 .redes img {
   width: auto;
   height: 35px;
@@ -215,6 +216,7 @@ footer img {
   }
 }
 
+/*Contenido, estilos y boton del Hero Section*/
 .hero__content__title {
   text-align: center;
   font-size: 5rem;
@@ -331,6 +333,7 @@ article {
   }
 }
 
+/*Titulo y lista de razones*/
 article div h2 {
   text-align: center;
   font-size: 5rem;
@@ -467,6 +470,7 @@ article img {
   }
 }
 
+/*Contenido, estilos de las cartas*/
 .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,9 +697,11 @@ article img {
 @media screen and (max-width: 500px) {
   .trabajos-info__text {
     font-size: 1.6rem;
+    margin: 2rem;
   }
 }
 
+/*Contenido, estilos y boton del banner en trabajos*/
 .banner {
   max-width: 100rem;
   display: -webkit-box;
@@ -841,6 +847,7 @@ article img {
   }
 }
 
+/*Animacion fade in de la page*/
 .galeria,
 .galeria-fotos {
   -webkit-animation: fadeIn 2s;
@@ -952,6 +959,7 @@ article img {
   }
 }
 
+/*Formulario de contacto*/
 .formulario {
   background-image: linear-gradient(20deg, rgba(89, 63, 169, 0), rgba(124, 95, 219, 0.7));
 }
